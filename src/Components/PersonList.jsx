@@ -1,31 +1,29 @@
 
-function PersonLists({ persons, deletePersonById, editPerson }) {
+function PersonLists({ items, deleteItemById, editItem }) {
     return (
         <div>
-            <h1>List of persons</h1>
+            <h1>List of itmes</h1>
             <table className="table table-striped">
                 <thead>
                     <tr>
                         <th>Id</th>
                         <th>Name</th>
-                        <th>Age</th>
-                        <th>Email</th>
-                        <th>Gender</th>
+                        <th>Price</th>
+                        <th>Calories</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
 
-                    {persons.map((person) => (                      
+                    {items.map((item) => (                      
                           <tr key={crypto.randomUUID()} >
-                            <td>{person.id}</td>
-                            <td>{person.name}</td>
-                            <td>{person.age}</td>
-                            <td>{person.email}</td>
-                            <td>{person.gender}</td>
+                            <td>{item.id}</td>
+                            <td>{item.name}</td>
+                            <td>{item.price}</td>
+                            <td>{item.calories}</td>
                             <td>
-                                <button onClick={() => editPerson(person)}>Edit</button>
-                                <button onClick={() => deletePersonById(person.id)}>Delete</button>
+                                <button onClick={() => editItem(item)}>Edit</button>
+                                <button onClick={() => deleteItemById(item.id)}>Delete</button>
 
                             </td>
                         </tr>

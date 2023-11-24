@@ -5,83 +5,83 @@ import PersonForm from './Components/PersonForm'
 import { useState,useEffect } from 'react';
 import { fetchData } from './util/persistance';
 
-const blankperson = { "id": "", "age": "","name": "","email": "","gender": "" };
+const blankItem = { "id": "", "name": "","price": "","calories": "" };
 
 //add blankItem for a groceryList
 
 function App() {
-const[persons, setPersons] = useState([]);
-const[personToEdit, setPersonToEdit] = useState(blankperson);
+const[items, setItems] = useState([]);
+const[itemToEdit, setItemToEdit] = useState(blankItem);
 
 //add GroveryItems and setGroceryItems to useState
 //add ItemToEdit and setItemToEdit to useState remember to add (blankItem)
 const APIURL = "http://localhost:3000/api";
 
 // editGroceries (Tobias)
-function editPerson(person)
+function editItem(item)
 { 
-  setPersonToEdit(person);
+  setItemToEdit(item);
 }
 
 // mutateGroceries (Tobias)
-function mutatePerson(person){
- if (person.id != ""){
+function mutateItem(item){
+ if (item.id != ""){
   //put
-  updatePerson(person)
+  updateItem(item)
   } else {
   //post
-  createPerson(person)
+  createItem(item)
   }
  }
 
  
 // updateGroceries (Tobias)
-function updatePerson(person){
+function updateItem(item){
   console.log("update");
-  fetchData(`${APIURL}/${person.id}`, 
-    setPersons(persons.map(p => p.id === person.id ? person : p)),
+  fetchData(`${APIURL}/${item.id}`, 
+    setItems(items.map(i => i.id === item.id ? item : i)),
     'POST', 
-    person);
+    item);
 }
 
-function createPerson(person){
+function createItem(item){
   console.log("create")
-  fetchData(APIURL, (person)=>setPersons([...persons,  person]), 
+  fetchData(APIURL, (item)=>setitems([...items,  item]), 
     'POST', 
-    person);
+    item);
 }
 
 
 
-  function getPersons(callback){
+  function getItems(callback){
    fetchData(APIURL, callback)
   }
 
-  function deletePersonById(personId){
+  function deleteItemById(itemId){
     // fjern via  API - JSON server
-    fetchData(`${APIURL}/${personId}`, ()=>{}, "DELETE");
+    fetchData(`${APIURL}/${itemId}`, ()=>{}, "DELETE");
 
     // fjern fra person array via usestate 
-    setPersons ([...persons.filter((person) => person.id != personId)])
+    setItems ([...items.filter((item) => item.id != itemId)])
  }
 
   useEffect(() => {
-     getPersons((data) => setPersons(data) );
+     getItems((data) => setItems(data) );
   }, []);
 
   return (
   <div>
-    <h1>Person DB</h1>
+    <h1>ShoppingList</h1>
     <PersonLists 
-    persons ={persons} 
-    deletePersonById={deletePersonById}
-    editPerson={editPerson}
+    items ={items} 
+    deleteItemById={deleteItemById}
+    editItem={editItem}
     />
 
     <PersonForm 
-    blankPerson={blankperson}
-    personToEdit={personToEdit}
-    mutatePerson={mutatePerson}
+    blankItem={blankItem}
+    itemToEdit={itemToEdit}
+    mutateItem={mutateItem}
   />
   </div>
   )

@@ -1,48 +1,43 @@
 import { useState, useEffect } from "react";
-function PersonForm({blankPerson, personToEdit, mutatePerson}) {
-    const [person, setPerson] = useState({...personToEdit}) 
+
+
+function PersonForm({blankItem, itemToEdit, mutateItem}) {
+    const [item, setItem] = useState({...itemToEdit}) 
 
     useEffect(() => {
-        setPerson(personToEdit)
-    }, [personToEdit]);
+        setItem(itemToEdit)
+    }, [itemToEdit]);
 
 function handleChange(e){
     const value = e.target.value;
     const name = e.target.id;
-    setPerson({...person, [name]: value});
+    setItem({...item, [name]: value});
 }
 
 
 function handleSubmit(e){
     e.preventDefault();
     // callback function
-    mutatePerson(person);
+    mutateItem(item);
 
 }
 
 
  return ( 
         <div>
-            <h1>add/edit person</h1>
+            <h1>add/edit Items</h1>
     <form onSubmit={handleSubmit}>
     <label htmlFor="id">Id</label>
-    <input id="id" type="number" readOnly placeholder="id" value={person.id} onChange={handleChange}/>
+    <input id="id" type="number" readOnly placeholder="id" value={item.id} onChange={handleChange}/>
     <label htmlFor="name">Name</label>
-    <input id="name" type="text" placeholder="name" value={person.name} onChange={handleChange} />
-    <label htmlFor="age">Age</label>
-    <input id="age" type="number" min="1" max="120" placeholder="age" value={person.age} onChange={handleChange} />
-    <label htmlFor="email">Email</label>
-    <input id="email" type="email" placeholder="email" value={person.email} onChange={handleChange} />
-    <label htmlFor="gender">Gender</label>
-    <select id="gender" value={person.gender} onChange={handleChange}>
-        <option defaultChecked>Select Gender</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option>
-    </select>
+    <input id="name" type="text" placeholder="name" value={item.name} onChange={handleChange} />
+    <label htmlFor="price">price</label>
+    <input id="price" type="number" min="1" max="9000" placeholder="price" value={item.price} onChange={handleChange} />
+    <label htmlFor="calories">calories</label>
+    <input id="calories" type="number" min="1" max="9000"  placeholder="calories" value={item.calories} onChange={handleChange} />
 
     <button> update </button>
-    <button onClick={() => setPerson(blankPerson)}> reset </button>
+    <button onClick={() => setItem(blankItem)}> reset </button>
     </form>
         </div>
      );
