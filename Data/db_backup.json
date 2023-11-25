@@ -1,40 +1,109 @@
 {
-    "api":
-    [
-      {
-        "id": 1,
-        "age": "22",
-        "name": "Steve",
-        "email": "steve@test.com",
-        "gender": "male"
-      },
-      {
-        "id": 2,
-        "age": "19",
-        "name": "Michelle",
-        "email": "michelle@test.com",
-        "gender": "female"
-      },
-      {
-        "id": 3,
-        "age": "30",
-        "name": "Anna",
-        "email": "anna@test.com",
-        "gender": "female"
-      },
-      {
-        "id": 4,
-        "age": "45",
-        "name": "Karl",
-        "email": "karl@test.com",
-        "gender": "male"
-      },
-      {
-        "id": 5,
-        "age": "15",
-        "name": "Michael",
-        "email": "michael@test.com",
-        "gender": "male"
-      }
-    ]
-  }
+  "api": [
+    {
+      "id": 1,
+      "name": "Banana",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 2,
+      "name": "Apple",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 3,
+      "name": "Orange",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 4,
+      "name": "Pineapple",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 5,
+      "name": "Mango",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 6,
+      "name": "Grapes",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 7,
+      "name": "Watermelon",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 8,
+      "name": "Strawberry",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 9,
+      "name": "Papaya",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 10,
+      "name": "Pomegranate",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 11,
+      "name": "Guava",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 12,
+      "name": "Cherry",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 13,
+      "name": "Blueberry",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 14,
+      "name": "Kiwi",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 15,
+      "name": "pony",
+      "price": "1222",
+      "calories": "6969",
+      "currency": "EUR"
+    }
+  ]
+}
