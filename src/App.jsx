@@ -5,7 +5,7 @@ import PersonForm from './Components/PersonForm'
 import { useState,useEffect } from 'react';
 import { fetchData } from './util/persistance';
 
-const blankItem = { "id": "", "name": "","price": "","calories": "" };
+const blankItem = { "id": "", "name": "","price": "","calories": "", "currency": "" };
 
 //add blankItem for a groceryList
 
@@ -38,11 +38,16 @@ function mutateItem(item){
 // updateGroceries (Tobias)
 function updateItem(item){
   console.log("update");
-  fetchData(`${APIURL}/${item.id}`, 
-    setItems(items.map(i => i.id === item.id ? item : i)),
-    'POST', 
-    item);
-}
+ fetchData(`${APIURL}/${item.id}`,
+ item => {
+  setItems(
+    items.map((i => i.id === item.id ? {...item} : i))
+  );
+ },
+ "PUT",
+ item
+ );
+    }
 
 function createItem(item){
   console.log("create")

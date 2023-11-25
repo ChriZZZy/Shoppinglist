@@ -10,6 +10,7 @@ function PersonLists({ items, deleteItemById, editItem }) {
                         <th>Name</th>
                         <th>Price</th>
                         <th>Calories</th>
+                        <th>Currency</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -21,6 +22,7 @@ function PersonLists({ items, deleteItemById, editItem }) {
                             <td>{item.name}</td>
                             <td>{item.price}</td>
                             <td>{item.calories}</td>
+                            <td>{item.currency}</td>
                             <td>
                                 <button onClick={() => editItem(item)}>Edit</button>
                                 <button onClick={() => deleteItemById(item.id)}>Delete</button>

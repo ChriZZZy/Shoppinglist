@@ -4,7 +4,106 @@
       "id": 1,
       "name": "Banana",
       "price": "543",
-      "calories": "432"
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 2,
+      "name": "Apple",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 3,
+      "name": "Orange",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 4,
+      "name": "Pineapple",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 5,
+      "name": "Mango",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 6,
+      "name": "Grapes",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 7,
+      "name": "Watermelon",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 8,
+      "name": "Strawberry",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 9,
+      "name": "Papaya",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 10,
+      "name": "Pomegranate",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 11,
+      "name": "Guava",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 12,
+      "name": "Cherry",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 13,
+      "name": "Blueberry",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 14,
+      "name": "Kiwi",
+      "price": "543",
+      "calories": "432",
+      "currency": "DKK"
+    },
+    {
+      "id": 15,
+      "name": "pony",
+      "price": "1222",
+      "calories": "6969",
+      "currency": "EUR"
     }
   ]
 }

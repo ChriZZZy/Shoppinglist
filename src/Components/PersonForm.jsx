@@ -35,6 +35,13 @@ function handleSubmit(e){
     <input id="price" type="number" min="1" max="9000" placeholder="price" value={item.price} onChange={handleChange} />
     <label htmlFor="calories">calories</label>
     <input id="calories" type="number" min="1" max="9000"  placeholder="calories" value={item.calories} onChange={handleChange} />
+    <label htmlFor="currency">Currency</label>
+    <select id="currency" value={item.currency} onChange={handleChange}>
+        <option defaultChecked>Select Currency</option>
+        <option value="DKK">DKK</option>
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+    </select>
 
     <button> update </button>
     <button onClick={() => setItem(blankItem)}> reset </button>
