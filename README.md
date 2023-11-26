@@ -8,6 +8,6 @@ We have made a shopinglist application for people who either wants a handy shopp
 
 
 ## Technoligies
-* [VsCode]
-* [NodeJs]
-* [React FrameWork]
+* VsCode
+* NodeJs
+* React FrameWork
