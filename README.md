@@ -3,7 +3,7 @@
 Made by Anders, Tobias and Chris
 
 
-## application
+## Application
 We have made a singlepage application that resembles a shoppinglist for people who either wants a handy shoppinglist that you can activle interact with or people who might be on a diet and want a way to keep track of what they are eating, the price and how many calories they consume. 
 
 we structured our application with different components such as:
@@ -26,7 +26,21 @@ we structured our application with different components such as:
  
 
 
+## setup
+```bash
+#Clone the repo
+git clone git@github.com:ChriZZZy/Shoppinglist.git
 
+#Navigate to the directory
+cd Shoppinglist
+
+#Install dependencies
+npm i
+#Run react with
+npm run dev
+#Run Json server with
+npm run jsonserver
+```
 
 
 
