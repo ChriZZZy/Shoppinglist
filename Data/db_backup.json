@@ -1,89 +1,115 @@
 {
-  "users": [],
-  "items": [
+  "users": [
+    {
+      "name": "user",
+      "password": "123",
+      "id": 1
+    }
+  ],
+  "list": [
     {
       "id": 3,
       "name": "Orange",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 1
     },
     {
       "id": 4,
       "name": "Pineapple",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 1
     },
     {
       "id": 5,
       "name": "Mango",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 1
     },
     {
       "id": 6,
       "name": "Grapes",
       "price": "543",
       "calories": "432",
-      "currency": "EUR"
+      "currency": "EUR",
+      "user": 1
     },
     {
       "id": 7,
       "name": "Watermelon",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 1
     },
     {
       "id": 8,
       "name": "Strawberry",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 1
     },
     {
       "id": 9,
       "name": "Papaya",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 1
     },
     {
       "id": 10,
       "name": "Pomegranate",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 1
     },
     {
       "id": 11,
       "name": "Guava",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 1
     },
     {
       "id": 12,
       "name": "Cherry",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 1
     },
     {
       "id": 13,
       "name": "Blueberry",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 1
     },
     {
       "id": 14,
       "name": "Kiwi",
       "price": "9000",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "DKK",
+      "user": 2
+    },
+    {
+      "id": 15,
+      "name": "test",
+      "price": "123",
+      "calories": "123",
+      "currency": "DKK",
+      "user": 1
     }
   ]
 }
