@@ -94,16 +94,9 @@
     {
       "id": 14,
       "name": "Kiwi",
-      "price": "543",
+      "price": "9000",
       "calories": "432",
       "currency": "DKK"
-    },
-    {
-      "id": 15,
-      "name": "pony",
-      "price": "1222",
-      "calories": "6969",
-      "currency": "EUR"
     }
   ]
 }

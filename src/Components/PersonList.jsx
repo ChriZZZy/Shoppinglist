@@ -1,5 +1,7 @@
 
-function PersonLists({ items, deleteItemById, editItem }) {
+function PersonLists({ items, deleteItemById, editItem, totalCalories, totalPrice, getTotalPriceWithCurrency }) {
+
+    
     return (
         <div>
             <h1>List of itmes</h1>
@@ -11,6 +13,7 @@ function PersonLists({ items, deleteItemById, editItem }) {
                         <th>Price</th>
                         <th>Calories</th>
                         <th>Action</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -28,6 +31,13 @@ function PersonLists({ items, deleteItemById, editItem }) {
                             </td>
                         </tr>
                     ))}
+                      {/* Total row */}
+                      <tr>
+                        <td colSpan="2"></td>
+                        <td>Total price: {totalPrice}</td>
+                        <td>Total calories: {totalCalories}</td>
+                        <td></td>
+                    </tr>
          
 
                 </tbody>

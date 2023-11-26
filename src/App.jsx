@@ -23,6 +23,19 @@ function editItem(item)
   setItemToEdit(item);
 }
 
+function calculateTotalPrice(){
+  const totalPrice = items.reduce((total, item) => total + parseFloat(item.price), 0);
+  return totalPrice;
+}
+
+function calculateTotalCalories(){
+  const totalCalories = items.reduce((total, item) => total + parseFloat(item.calories), 0);
+  return totalCalories;
+}
+
+
+
+
 // mutateGroceries (Tobias)
 function mutateItem(item){
  if (item.id != ""){
@@ -81,6 +94,9 @@ function createItem(item){
     items ={items} 
     deleteItemById={deleteItemById}
     editItem={editItem}
+    totalPrice={calculateTotalPrice()}
+    totalCalories={calculateTotalCalories()}
+    
     />
 
     <PersonForm 
