@@ -4,6 +4,11 @@
       "name": "user",
       "password": "123",
       "id": 1
+    },
+    {
+      "name": "tobiasT",
+      "password": "1234",
+      "id": 2
     }
   ],
   "list": [
@@ -110,6 +115,14 @@
       "calories": "123",
       "currency": "DKK",
       "user": 1
+    },
+    {
+      "id": 16,
+      "name": "ost",
+      "price": "1234",
+      "calories": "1234",
+      "currency": "DKK",
+      "user": 2
     }
   ]
 }
