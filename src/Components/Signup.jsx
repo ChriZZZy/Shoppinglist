@@ -50,11 +50,17 @@ function Signup({ setUser }) {
         },
       }
     );
+    console.log(res);
+
     let data = await res.json();
-    // save user to localstorage
-    localStorage.setItem("user", JSON.stringify(data[0]));
-    setUser(data[0]);
-    setHasUser(true);
+    if (data.length === 0) {
+      setError("User does not exist");
+    } else {
+      // save user to localstorage
+      localStorage.setItem("user", JSON.stringify(data[0]));
+      setUser(data[0]);
+      setHasUser(true);
+    }
   }
 
   return (
