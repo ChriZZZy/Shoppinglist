@@ -8,4 +8,7 @@ We have made a shopinglist application for people who either wants a handy shopp
 
 
 ## Technoligies
-Our technoligies includes: vsCode, nodeJS and jsonserver all made in the react framwork. 
+Our technoligies includes: 
+vsCode 
+nodeJS
+React Framework
