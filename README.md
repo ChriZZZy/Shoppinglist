@@ -8,7 +8,7 @@ We have made a shopinglist application for people who either wants a handy shopp
 
 
 ## Technoligies
-Our technoligies includes: 
-vsCode 
-nodeJS
-React Framework
+Markup : * VSCode
+          * NodeJS
+          * ReactFrameWork
+
