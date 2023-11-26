@@ -1,19 +1,6 @@
 {
-  "api": [
-    {
-      "id": 1,
-      "name": "Banana",
-      "price": "543",
-      "calories": "432",
-      "currency": "DKK"
-    },
-    {
-      "id": 2,
-      "name": "Apple",
-      "price": "543",
-      "calories": "432",
-      "currency": "DKK"
-    },
+  "users": [],
+  "items": [
     {
       "id": 3,
       "name": "Orange",
@@ -40,7 +27,7 @@
       "name": "Grapes",
       "price": "543",
       "calories": "432",
-      "currency": "DKK"
+      "currency": "EUR"
     },
     {
       "id": 7,
@@ -94,16 +81,9 @@
     {
       "id": 14,
       "name": "Kiwi",
-      "price": "543",
+      "price": "9000",
       "calories": "432",
       "currency": "DKK"
-    },
-    {
-      "id": 15,
-      "name": "pony",
-      "price": "1222",
-      "calories": "6969",
-      "currency": "EUR"
     }
   ]
 }

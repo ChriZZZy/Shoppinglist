@@ -1,9 +1,9 @@
 export function fetchData(url, callback, method, body) {
 
     const headers =
-        {
-            'Accept': 'application/json'
-        }
+    {
+        'Accept': 'application/json'
+    }
 
     if (method === 'POST' || method === 'PUT') {
         headers['Content-Type'] = 'application/json'
