@@ -18,7 +18,7 @@ function App() {
   const [itemToEdit, setItemToEdit] = useState(blankItem);
   const [user, setUser] = useState(localUser);
 
-  //add GroveryItems and setGroceryItems to useState
+  //add GroceryItems and setGroceryItems to useState
   //add ItemToEdit and setItemToEdit to useState remember to add (blankItem)
   const APIURL = "http://localhost:3000";
 

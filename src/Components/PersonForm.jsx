@@ -69,7 +69,7 @@ function PersonForm({ user, blankItem, itemToEdit, mutateItem }) {
         </select>
 
         <button> update </button>
-        <button onClick={() => setItem(blankItem)}> reset </button>
+        <button type="button" onClick={() => setItem(blankItem)}> reset </button>
       </form>
     </div>
   );
